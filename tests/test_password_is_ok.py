@@ -12,25 +12,8 @@ import unittest
 
 class Test_Password_Checker(unittest.TestCase):
 
-    #Test if password has less than 8 characters
-    def test_pass_length(self):
-        pass
+    password = "UmuziCohort2020#"
+    password_checker = Password_Checker(password)
 
-    #Test if password has atleast one special character
-    def test_pass_characters(self):
-        pass
-
-    #Test if password has atleast one numeric value
-    def test_pass_numbers(self):
-        pass
-
-    #Test if password has atleast one lowercase letter
-    def test_pass_lowercase(self):
-        pass
-
-    #Test if password has atleast one uppercase letter
-    def test_pass_uppercase(self):
-        pass
-
-if __name__ == '__main__':
-    unittest.main()
+    def test_password_is_ok():
+        assert password_checker.password_is_ok(password)==True

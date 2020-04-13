@@ -26,27 +26,26 @@ validate = Verification()
 
 # Test if password has less than 8 characters
 def test_pass_length():
-    assert validate.Verification() == True
+    assert Verification.length(password)==True
 
 
 # Test if password has atleast one special character
 def test_pass_characters():
-    pass
+    assert Verification.special(password)==True
 
 
 # Test if password has atleast one numeric value
 def test_pass_numbers():
-    pass
+    assert Verification.numbers(password)==True
 
 
 # Test if password has atleast one lowercase letter
-def test_pass_lowercase():
-    pass
-
+def test_lowercase():
+    assert Verification.lowercase(password)==True
 
 # Test if password has atleast one uppercase letter
 def test_pass_uppercase():
-    pass
+    assert Verification.uppercase(password)==True
 
 
 if __name__ == '__main__':
