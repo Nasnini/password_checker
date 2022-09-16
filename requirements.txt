@@ -19,7 +19,7 @@ importlib-resources==1.0.2
 ipaddress==1.0.17
 keyring==10.6.0
 keyrings.alt==3.0
-Mako==1.1.1
+Mako==1.2.2
 MarkupSafe==1.1.1
 more-itertools==5.0.0
 packaging==20.1
